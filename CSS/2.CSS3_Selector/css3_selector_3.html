@@ -57,16 +57,16 @@
         /* "::first-line" : 컨텐츠의 첫 줄 */
         .pseudo1::first-line { font-weight: 900; }
 
-        /* "::after" : 컨텐츠의 뒤의 위치를 선택 */
-        .pseudo2::after {
-            content: '★';
-            color: gold;
-        }
-
         /* "::before" : 컨텐츠의 앞의 위치를 선택 */
         .pseudo2::before {
             content: '●';
             color: blue;
+        }
+
+        /* "::after" : 컨텐츠의 뒤의 위치를 선택 */
+        .pseudo2::after {
+            content: '★';
+            color: gold;
         }
 
         /* "::selection" : 드래그한 컨텐츠를 선택 (사파리 브라우저에서 지원 X) */
