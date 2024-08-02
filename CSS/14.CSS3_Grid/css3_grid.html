@@ -26,7 +26,7 @@
             grid-template-rows 속성 : grid의 행의 크기와 개수를 지정
             grid-template-areas 속성 : grid의 각 영역에 대해 이름을 부여하고 그룹화
         */
-        .grid-template {
+        .grid-template-columns-rows{
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 100px 200px 300px;
             grid-template-areas: 
@@ -39,7 +39,7 @@
         /*
             grid-template 속성 : *-*-columns, *-*-rows, *-*-areas를 한번에 지정하는 단축 속성
         */
-        .grid-template-columns-rows {
+        .grid-template {
             grid-template: 
                 "header header header" 100px
                 "main main sidebar" 200px
@@ -137,7 +137,7 @@
 
 </head>
 <body>
-    <div class="grid-container grid-template">
+    <div class="grid-container grid-template-columns-rows">
         <div style="background-color: rgba(255, 0, 0, 0.75);"></div>
         <div style="background-color: rgba(0, 255, 0, 0.75);"></div>
         <div style="background-color: rgba(0, 0, 255, 0.75);"></div>
