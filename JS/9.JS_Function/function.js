@@ -20,7 +20,7 @@ console.log(result);
 */
 var func1 = add;
 console.log(func1);
-// var func1 = add();   // add() = a, b 값에 nudefind 끼리 더해져 NaN 값이됨
+// var func1 = add();   // add() = a, b 값에 undefined 끼리 더해져 NaN 값이됨
 // console.log(func1);  // NaN 출력
 
 var result = func1(99, 99);
