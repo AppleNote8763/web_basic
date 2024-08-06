@@ -105,74 +105,87 @@ console.log('==============================');
 
 /*
     indexOf(element) : 
-    - 
-    - 
+    - 배열에 매개변수로 전달된 요소가 존재하면 첫번째 인덱스를 반환
+    - 존재하지 않으면 -1 반환
 */
+console.log(fruits.indexOf('apple'));
+console.log(fruits.indexOf('melon'));
 
 
 console.log('==============================');
 
 /*
     includes(element) :
-    - 
+    - 배열에 전달된 매개변수가 요소에 존재하면 true, 존재하지 않으면 false
 */
+console.log(fruits.includes('apple'));
+console.log(fruits.includes('melon'));
 
 
 console.log('==============================');
 
 /*
     push(element) :
-    - 
+    - 배열의 마지막 인덱스에 요소를 추가하고 변경된 길이를 반환
 */
+console.log(fruits, fruits.length);
+console.log(fruits.push('mango'), fruits);
 
 
 console.log('==============================');
 
 /*
     pop() :
-    - 
+    - 배열의 마지막 요소를 제거하고 제거한 요소를 반환
 */
+console.log(fruits.pop(), fruits);
 
 
 console.log('==============================');
 
 /*
     shift() :
-    - 
+    - 배열의 첫번째 요소를 제거하고 제거한 요소를 반환
 */
+console.log(fruits.shift(), fruits);
 
 
 console.log('==============================');
 
 /*
     reverse() :
-    - 
+    - 배열의 순서를 역전
 */
+console.log(fruits.reverse(), fruits);
 
 
 console.log('==============================');
 
 /*
     concat(array or item) : 
-    - 
+    - 매개변수로 전달된 값들을 해당 배열의 마지막 요소 뒤에 연결하여 새로운 배열을 반환
 */
+var newFruits = fruits.concat(['apple', 'mango']);
+console.log(fruits, newFruits);
 
 
 console.log('==============================');
 
 /*
     slice(start, end) : 
-    - 
+    - start에 해당하는 인덱스 부터 end에 해당하는 인덱스 앞까지 복사하여 반환
 */
+console.log(newFruits.slice(1, 3), newFruits);      // 배열의 1번째 인덱스부터 3번째 인덱스 사이의 요소를 지정
 
 
 console.log('==============================');
 
 /*
     splice(start, eleteCount, items...) :
-    - 
+    - 배열의 요소를 제거하고 제거한 위치에 요소를 갈아끼운 배열을 반환
+    - 요소를 삭제하거나 교체하여 배열의 내용을 변경하며, 제거된 요소가 담긴 별도의 배열을 새로 반환     // 추가 설명
 */
-
-
+// console.log(newFruits.splice(1, 2, 'melon'), newFruits);
+console.log(newFruits.splice(2, 1), newFruits);     // 배열의 2번째 인덱스 부터 1개의 요소를 지정
 
 
