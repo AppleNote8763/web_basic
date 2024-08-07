@@ -85,52 +85,50 @@
         */
 
         /*
-            className
-            - 
-            - 
+            id
+            - id 속성 값 반환 또는 변경
         */
-        
+        var userPwMessageElement = document.getElementById('user-p-message');
+        console.log(userPwMessageElement.id);
+        userPwMessageElement.id = 'user-pw-message';
+        console.log(userPwMessageElement.id);
 
 
         console.log('==============================');
 
         /*
             className
-            - 
-            - 
+            - class 속성 값 반환 또는 변경
         */
-        
+        console.log(userPwMessageElement.className);
+        userPwMessageElement.className = 'error-message';
+        console.log(userPwMessageElement.className);
 
 
         console.log('==============================');
-        
 
         /*
             hasAttribute(attribute)
-            - 
-            - 
-            - 
+            - 매개변수로 전달된 속성을 가지고 있는지 확인
+            - boolean 값 반환
 
             getAttribute(attribute)
-            - 
-            - 
-            - 
+            - 매개변수로 전달된 속성 값을 반환
+            - string 값 반환
 
             setAttribute(attribute, value)
-            - 
-            - 
-            - 
+            - 첫번째 매개변수로 전달한 속성의 값을 두번째 매개변수 값으로 변경
+            - undefined 반환
 
             removeAttribute(attribute)
-            - 
-            - 
-            - 
+            - 매개변수로 전달한 속성을 제거
+            - undefined 반환
         */
         
 
 
         console.log('==============================');
-        
+
         /*
             HTML 콘텐츠 조작
         */
@@ -157,7 +155,7 @@
 
 
         console.log('==============================');
-        
+
         /*
             createElement(tagName)
             - 
@@ -183,7 +181,7 @@
 
 
         console.log('==============================');
-        
+
         /*
             insertAdjacentHTML(position, string)
             - 
@@ -195,7 +193,7 @@
 
 
         console.log('==============================');
-        
+
         /*
             style : 
         */
