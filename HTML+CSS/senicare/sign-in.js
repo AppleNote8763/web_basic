@@ -11,7 +11,7 @@ function onSignInButtonClickHandler (event) {
         messageElement.textContent= '로그인정보가 일치하지 않습니다';
         return;
     }
-    alert('로그인 성공!')
+    alert('로그인 성공!');
     messageElement.textContent = '';
 }
 
