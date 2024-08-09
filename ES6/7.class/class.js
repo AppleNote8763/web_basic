@@ -77,29 +77,95 @@ console.log('==================================================');
 
 /*
     getter, setter : 
-    - 
-    - 
+    - getter : 프라이빗 멤버 변수의 값을 얻을 수있는 캡슐화 메서드
+    - setter : 프라이빗 멤버 변수의 값을 할당할 수 있는 캡슐화 메서드
 */
+class Sample2 {
+    #privateField;
 
+    constructor (privateField) {
+        this.#privateField = privateField;
+    }
+
+    get PrivateField () {
+        return this.#privateField;
+    }
+
+    set PrivateField (privateField) {
+        this.#privateField = privateField;
+    }
+}
+
+const sample2Instance = new Sample2('프라이빗');
+console.log(sample2Instance);
+console.log(sample2Instance.PrivateField);
+sample2Instance.PrivateField = '변경 프라이빗';
+console.log(sample2Instance.PrivateField);
 
 
 console.log('==================================================');
 
 /*
     인스턴스 메서드와 정적 메서드 : 
-    - 
-    - 
+    - 클래스 내부에서 function 키워드 없이 함수를 작성하여 인스턴스 메서드 선언
+    - static 키워드를 추가하여 정적 메서드 선언
 */
+class Sample3 {
+    instanceMethod () {
+        console.log('인스턴스 메서드');
+    }
 
+    static staticMethod () {
+        console.log('정적 메서드');
+    }
+}
+
+const sample3instance = new Sample3();
+sample3instance.instanceMethod();
+// sample3instance.staticMethod();      // 정적 메서드는 인스턴스에서 호출할 수 없고, 클래스 이름을 통해 호출 해야함
+Sample3.staticMethod();
 
 
 console.log('==================================================');
 
 /*
     클래스 상속 : 
-    - 
-    - 
-    - 
+    - extends 키워드를 사용하여 클래스 상속
+    - 메서드 오버라이딩 가능
+    - super 키워드로 부모 클래스 참조 가능
 */
+class ParentsClass {
+    parentsField;
 
+    constructor(parentsField) {
+        this.parentsField = parentsField;
+    }
 
+    parentsMethod() {
+        console.log('부모 메서드');
+    }
+}
+
+class ChildClass extends ParentsClass {
+    childField;
+
+    constructor(parentsField, childField) {
+        super(parentsField); // 부모 클래스의 생성자 호출
+        this.childField = childField;
+    }
+
+    childMethod() {
+        console.log('자식 메서드');
+    }
+
+    parentsMethod() {
+        console.log('오버라이드 메서드'); // 부모 메서드 오버라이드
+    }
+}
+
+const parentsInstance = new ParentsClass('부모 필드');
+const childInstance = new ChildClass('부모 필드', '자식 필드');
+
+console.log(childInstance);
+childInstance.childMethod(); // 자식 메서드
+childInstance.parentsMethod(); // 오버라이드 메서드
