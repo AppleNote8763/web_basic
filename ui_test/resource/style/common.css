@@ -1,0 +1,174 @@
+@font-face {
+    font-family: kakao;
+    src: url(/ui_test/resource/font/KakaoRegular.ttf);
+}
+
+#press_release_container {
+    font-family: kakao, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#press_release_two_big_box {
+    display: flex;
+    flex-direction:row;
+
+    width: 1712px;
+    height: 198px;
+}
+
+.press_release {
+    background-color: #f3f3f3;
+    border-radius: 20px;
+}
+
+.bigBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+
+    margin: 0 8px;
+    padding: 36px 40px;
+}
+
+.box_top {
+    display: flex;
+    flex-direction:row;
+
+    width: 768px;
+    height: 38px;
+}
+
+.icon_box {
+    width: 38px;
+    height: 38px;
+
+    margin-right: 12px;
+
+    background-image: url('https://t1.kakaocdn.net/kakaocorp/kakaocorp/admin/6562f7bc017800001.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cate_box {
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+
+    margin-top: 2.5px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 1);
+
+    font-size: 14px;
+    line-height: 25px;
+
+    user-select: none;
+}
+
+.date_box {
+    width: 79.5px;
+    height: 38px;
+
+    margin-left: 12px;
+    font-size: 14px;
+    line-height: 38px;
+
+    user-select: none;
+}
+
+.bigBox .ico_share {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+
+    top: 38px;
+    right: 30px;
+
+    background-image: url('https://cdn-icons-png.flaticon.com/512/64/64576.png');
+    background-size: cover;
+
+    cursor: pointer;
+}
+
+.title_link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.title_box {
+    width: 768px;
+    height: 76px;
+    margin-top: 12px;
+    
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 38px;
+}
+
+#press_release_three_big_box {
+    display: flex;
+    flex-direction:row;
+
+    margin-top: 16px;
+}
+
+.link_news {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+    width: 480px;
+    height: 38px;
+
+    margin: 0 0 0 16px;
+    padding: 36px 40px;
+}
+
+.title_link {
+    font-size: 26px;
+    line-height: 38px;
+    font-weight: 400;
+}
+
+.quick_access {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100px;
+    height: 38px;
+}
+
+.text_news {
+    width: 70px;
+    height: 25px;
+
+    text-align: right;
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.btn_arr {
+    width: 24px;
+    height: 24px;
+    margin: 7px 0 0 8px;
+
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+    color: white;
+
+    background-color: black;
+    border-radius: 50%;
+}
+
+.press_release.link_news:hover .btn_arr {
+    background-color: rgba(0, 0, 0, 0.7);
+}
